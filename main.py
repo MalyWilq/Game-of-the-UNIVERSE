@@ -10,7 +10,7 @@ character = []
 
 
 def start():
-    print('UNIVERSE anomaly v1.0 alpha \n')
+    print('UNIVERSE anomaly v1.0 alpha\n')
     print('czy chcesz zacząć grę?')
     odp = input()
     if odp == 'tak':
