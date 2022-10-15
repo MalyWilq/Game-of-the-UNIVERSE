@@ -1,4 +1,4 @@
-# GAME
+# Game of UNIVERSE
 
 ## Uruchomienie
 
