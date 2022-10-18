@@ -258,6 +258,8 @@ def kcreator(postać):
                 else:
                     historia(character)
 
+
+
 def historia(ty):
     print('rok: 32899')
     print('Universe Labs')
