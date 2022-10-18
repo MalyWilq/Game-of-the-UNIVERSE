@@ -1,4 +1,4 @@
-# Game of UNIVERSE
+# Game of the   UNIVERSE
 
 ## Uruchomienie
 
@@ -13,5 +13,11 @@
   * system walki
   * więcej klas i gatunków
   * znajdźki i kody
+
+## Uwagi
+
+* Częsta zadawane pytania:
+  * Czym różni się bio cyborg od cyborga?
+    * Ponieważ bio cyborg jest zasilany bio odpadami. 
 
     

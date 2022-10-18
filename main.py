@@ -18,7 +18,7 @@ character = []
 
 
 def start():
-    print('Game of UNIVERSE v1.2\n')
+    print('Game of the UNIVERSE v1.2\n')
     print('czy chcesz zacząć grę?')
     odp = input()
     if odp == 'tak':
@@ -395,9 +395,9 @@ def kcreator(postać):
 
 
 def historia(ty):
-    print('rok: 32899')
+    print('\nrok: 32899')
     print('Universe Labs')
-    print('Naukowiec1: Reaktor jest przeciążony może wybuchnąć, co skutkuje połączeniem wszstkich alternatywnych światów!')
+    print('Naukowiec1: Reaktor jest przeciążony, jak wybuchnie połączą się wszstkie alternatywne światy!')
     input('<wciśnij enter>')
     print()
     print('Naukowiec2: Cicho! Zwiększ moc do 78%.')
@@ -434,7 +434,7 @@ def nameg():
     global character
     name = input('Jesteś eksperymentem404. Wpisz własne imie:')
     if name == '':
-        gra()
+        nameg()
     elif name == 'W123':
         pass
     elif name == 'MWDevTool':
@@ -448,8 +448,9 @@ def nameg():
             print(f'Jesteś: Rasa {character[0]}, klasa {character[1]}, imię {character[2]}')
 
 
-def historia2(ty):
-    pass
+#def historia2(ty):
+#    print('\nrok 32928')
+#    print('miejsce: 29 lat temu: Universe Labs. Teraz Infinity Labs')
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
