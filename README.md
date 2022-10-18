@@ -9,9 +9,9 @@
 
 ## Działanie
 
-* Gra aktualnie nie dzała jeśli masz jakiś pomysł taki jak:
+* Gra aktualnie nie dzała przyjmujemy pomysły takie jak:
   * system walki
   * więcej klas i gatunków
   * znajdźki i kody
-    * to pisz
+
     
