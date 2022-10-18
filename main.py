@@ -446,8 +446,9 @@ def nameg():
         else:
             character.append(name)
             print(f'Jesteś: Rasa {character[0]}, klasa {character[1]}, imię {character[2]}')
-
-
+        tym()
+def tym():
+    print('to koniec na razie')
 #def historia2(ty):
 #    print('\nrok 32928')
 #    print('miejsce: 29 lat temu: Universe Labs. Teraz Infinity Labs')
