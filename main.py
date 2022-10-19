@@ -432,7 +432,7 @@ def historia(ty):
 
 def nameg():
     global character
-    name = input('Jesteś eksperymentem404. Wpisz własne imie:')
+    name = input('Jesteś eksperymentem404. Wpisz własne imie: ')
     if name == '':
         nameg()
     elif name == 'W123':
@@ -449,9 +449,9 @@ def nameg():
         tym()
 def tym():
     print('to koniec na razie')
-#def historia2(ty):
-#    print('\nrok 32928')
-#    print('miejsce: 29 lat temu: Universe Labs. Teraz Infinity Labs')
+def historia2(ty):
+    print('\nrok 32928')
+    print('miejsce: 29 lat temu: Universe Labs. Teraz Infinity Labs')
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
