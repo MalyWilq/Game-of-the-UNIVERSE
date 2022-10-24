@@ -78,7 +78,7 @@ def gcreator():
             STRG = 30
             STRGZ = 30
             INTL = 40
-            character.append(gatunek[3])
+            character.append(gatunek[2])
             kcreator(character)
     elif odp == '4':
         odp2 = input(f'Wybrano rasę {gatunek[3]}. Czy napewno? ')
