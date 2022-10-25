@@ -19,9 +19,11 @@ character = []
 
 def start():
     print('Game of the UNIVERSE v1.2\n')
+    time.sleep(1)
     print('czy chcesz zacząć grę?')
     odp = input()
     if odp == 'tak':
+        time.sleep(0.25)
         gcreator()
 
 def gcreator():
@@ -37,6 +39,7 @@ def gcreator():
     print('wybież gatunek')
     for i in range(len(gatunek)):
         print(f'{i+1}. {gatunek[i]}')
+        time.sleep(0.25)
     odp = input('wybieram ')
     if odp == '1':
         odp2 = input(f'Wybrano rasę {gatunek[0]}. Czy napewno? ')
@@ -124,6 +127,7 @@ def kcreator(postać):
         print('Wybierz klasę')
         for i in range(len(klasyC)):
             print(f'{i+1}. {klasyC[i]}')
+            time.sleep(0.25)
         odp = input('Wybieram klasę ')
         if odp == '1':
             odp2 = input(f'Wybrano klasę {klasyC[0]}. Czy napewno? ')
@@ -224,6 +228,7 @@ def kcreator(postać):
         print('Wybierz klasę')
         for i in range(len(klasyK)):
             print(f'{i + 1}. {klasyK[i]}')
+            time.sleep(0.25)
         odp = input('Wybieram klasę ')
         if odp == '1':
             odp2 = input(f'Wybrano klasę {klasyK[0]}. Czy napewno? ')
@@ -283,6 +288,7 @@ def kcreator(postać):
         print('Wybierz klasę')
         for i in range(len(klasyE)):
             print(f'{i + 1}. {klasyE[i]}')
+            time.sleep(0.25)
         odp = input('Wybieram klasę ')
         if odp == '1':
             odp2 = input(f'Wybrano klasę {klasyE[0]}. Czy napewno? ')
@@ -342,6 +348,7 @@ def kcreator(postać):
         print('Wybierz klasę')
         for i in range(len(klasyBC)):
             print(f'{i + 1}. {klasyBC[i]}')
+            time.sleep(0.25)
         odp = input('Wybieram klasę ')
         if odp == '1':
             odp2 = input(f'Wybrano klasę {klasyBC[0]}. Czy napewno? ')
@@ -379,6 +386,7 @@ def kcreator(postać):
                     gcreator()
                 else:
                     historia(character)
+                    #historia(character)
 #        if odp == '3':
 #            odp2 = input(f'Wybrano klasę {klasyBC[2]}. Czy napewno? ')
 #            if odp2 != 'tak':
@@ -396,43 +404,54 @@ def kcreator(postać):
 
 def historia(ty):
     print('\nrok: 32899')
+    time.sleep(0.100)
     print('Universe Labs')
+    time.sleep(0.100)
     print('Naukowiec1: Reaktor jest przeciążony, jak wybuchnie połączą się wszstkie alternatywne światy!')
     input('<wciśnij enter>')
+    time.sleep(0.100)
     print()
     print('Naukowiec2: Cicho! Zwiększ moc do 78%.')
     input('<wciścnij enter>')
+    time.sleep(0.100)
     print()
     print('Naukowiec1: robi się.')
     print('[syczenia reaktora]')
     input('<wciśnij enter>')
+    time.sleep(0.100)
     print()
     print('Naukowiec2: Zwiększ moc do 100% i otwórz portal do wymiaru 379. Jeden portal!')
     input('<wciśnij enter>')
+    time.sleep(0.100)
     print()
     print('Naukowiec1: Zwiększam moc do 100%, Wpisuje numer świata, wpisuje liczbę portali, OTWIERAM PORTAL!!!')
     print('[piszczenie przycisków]')
     input('<wciśnij enter>')
+    time.sleep(0.100)
     print()
     print('S.O.P.U.L.19(System ochrony placówki Universe Labs 19): Uwaga! Uwaga! Przeciążenie reaktora antymaterii.')
     print('Cały personel jest zmuszony do postępowania zgodnie z procedurą 312')
     print('[wycie alarmu]')
     input('<wciśnij enter>')
+    time.sleep(0.100)
     print()
     print('Naukowiec2: 1 coś ty zrobił')
     print('Naukowiec1: To nie ja. To ty kazałeś mi to zrobić')
     print('[wycie alarmu]')
     input('<wciśnij enter>')
+    time.sleep(0.100)
     print()
     print('J.O.P.U.L 1(Jednostka ochrony placówek Universe Labs):Co wy tu robicie 1 i 2! Macie uciekać do bramy 1!')
     print('J.O.P.U.L 2(Jednostka ochrony placówek Universe Labs): Natychmiast!')
     input('<wciśnij enter>')
+    time.sleep(0.100)
     print()
     nameg()
 
 def nameg():
     global character
-    name = input('Jesteś eksperymentem404. Wpisz własne imie: ')
+    name = input('Jesteś eksperymentem nr.404. Wpisz własne imie: ')
+    time.sleep(0.100)
     if name == '':
         nameg()
     elif name == 'W123':
@@ -446,12 +465,63 @@ def nameg():
         else:
             character.append(name)
             print(f'Jesteś: Rasa {character[0]}, klasa {character[1]}, imię {character[2]}')
-        tym()
+            time.sleep(0.100)
+        tren()
 def tym():
     print('to koniec na razie')
 def historia2(ty):
     print('\nrok 32928')
+    time.sleep(0.100)
     print('miejsce: 29 lat temu: Universe Labs. Teraz Infinity Labs')
+    time.sleep(0.100)
+
+def tren():
+    global character
+    global HP
+    global DEF
+    global SPEED
+    global STRG
+    global STRGZ
+    global INTL
+    wybory = ['walcz', 'uciekaj', 1]
+    hape = 50
+    strge = 40
+    print(f'pierwszy przeciwnik\nBio-masa\n zdrowie = {hape} siła = {strge}\n')
+    battle(wybory, hape, strge)
+def battle(wybory, hape, strge):
+    global character
+    global HP
+    global STRG
+    hapeee = hape
+    for i in range(len(wybory[0:2])):
+        print(f'{i+1}. {wybory[i]}')
+        if i == 2:
+            break
+    odp = input('Wybieram: ')
+    if odp == '1':
+        dmg = random.randint(STRG, STRG + 25)
+        hapeee = hape - dmg
+        dmge = random.randint(strge, strge + 25)
+        if hapeee <= 0:
+            hapeee = 0
+        print(f'Zadajesz przeciwnikowi {dmg}. Zostaje mu {hapeee}.\nPrzeciwnik zadaje ci {dmge}. Zostaje ci {HP - dmge}')
+    if hapeee == 0:
+        print('Przeciwnik pokonany!!!')
+        historia2(character)
+    if HP <= 0:
+        HP = 0
+    if HP == 0:
+        odp2 = input('koniec gry\nCzy chcesz zacząć od nowa???')
+        if odp2 == 'tak':
+            character.remove(0)
+            character.remove(1)
+            character.remove(2)
+            start()
+    if odp == '2':
+        print('nie morzna teraz uciec')
+    elif odp != '1' and '2':
+        tren()
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
